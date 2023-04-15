@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Internet Availability Checker</title>
+	<script src="script.js"></script>
+</head>
+<body>
+	<h1>Internet Availability Checker</h1>
+	<form id="zip-form">
+		<label for="zip-code">Enter your zip code:</label>
+		<input type="text" id="zip-code" name="zip-code" required>
+		<label for="connection-type">Select your desired connection type:</label>
+		<select id="connection-type" name="connection-type" required>
+			<option value="">--Select--</option>
+			<option value="fiber">Fiber</option>
+			<option value="cable">Cable</option>
+			<option value="dsl">DSL</option>
+			<option value="satellite">Satellite</option>
+		</select>
+		<label for="budget">Enter your budget:</label>
+		<input type="number" id="budget" name="budget" required>
+		<button type="submit">Check Availability</button>
+	</form>
+	<div id="result"></div>
+</body>
+</html>
